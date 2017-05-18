@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {CalendarService} from "../../services/CalendarService";
 
 @Component({
   selector: 'page-eventos',
@@ -7,7 +8,7 @@ import { NavController } from 'ionic-angular';
 })
 export class EventosPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private calendar: CalendarService) {
 
   }
 
